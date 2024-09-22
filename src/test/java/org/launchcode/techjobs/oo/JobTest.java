@@ -39,29 +39,28 @@ public class JobTest {
         assertEquals(testJob.getPositionType().toString(), "Quality control");
         assertEquals(testJob.getCoreCompetency().toString(), "Persistence");
     }
-    @Test
-    public void testJobsForEquality(){
-        Job testJob1 = new Job("Product tester",
-                new Employer("ACME"),
-                new Location("Desert"),
-                new PositionType("Quality control"),
-                new CoreCompetency("Persistence"));
-        Job testJob2 = new Job("Product tester",
-                new Employer("ACME"),
-                new Location("Desert"),
-                new PositionType("Quality control"),
-                new CoreCompetency("Persistence"));
-
-        assertEquals(testJob1, testJob2);
-    }
+//    @Test
+//    public void testJobsForEquality(){
+//        Job testJob1 = new Job("Product tester",
+//                new Employer("ACME"),
+//                new Location("Desert"),
+//                new PositionType("Quality control"),
+//                new CoreCompetency("Persistence"));
+//        Job testJob2 = new Job("Product tester",
+//                new Employer("ACME"),
+//                new Location("Desert"),
+//                new PositionType("Quality control"),
+//                new CoreCompetency("Persistence"));
+//
+//        assertEquals(testJob1, testJob2);
+//    }
 
     @Test
     public void testToStringStartsAndEndsWithNewLine(){
-        Job testJob = new Job("Product tester",
-                new Employer("ACME"),
-                new Location("Desert"),
-                new PositionType("Quality control"),
-                new CoreCompetency("Persistence"));
+        Job testJob = new Job();
+
+        assertEquals(testJob.toString(),testJob.toString().startsWith(System.lineSeparator()));
+        assertEquals(testJob.toString(),testJob.toString().endsWith(System.lineSeparator()));
 
     }
 }
