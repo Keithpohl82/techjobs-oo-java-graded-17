@@ -53,7 +53,7 @@ public class Job {
                 "Employer: %s\n" +
                 "Location: %s\n" +
                 "Position Type: %s\n" +
-                "Core Competency: %s\n" +
+                "Core Competency: %s" +
                 System.lineSeparator(),
                 this.getId(), this.getName(), this.getEmployer(), this.getLocation(), this.getPositionType(), this.getCoreCompetency()
         );
