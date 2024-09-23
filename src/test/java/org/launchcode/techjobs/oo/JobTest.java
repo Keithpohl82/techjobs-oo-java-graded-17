@@ -69,8 +69,14 @@ public class JobTest {
                 new Location("Desert"),
                 new PositionType("Quality control"),
                 new CoreCompetency("Persistence"));
-        assertEquals(testJob1.toString(), System.lineSeparator() + "ID: 1\n" + "Name: Product tester\n" + "Employer: ACME\n" +
-                "Location: Desert\n" + "Position Type: Quality control\n" + "Core Competency: Persistence" + System.lineSeparator());
+        assertEquals(testJob1.toString(), System.lineSeparator() +
+                "ID: 1" + System.lineSeparator() +
+                "Name: Product tester" + System.lineSeparator() +
+                "Employer: ACME" + System.lineSeparator() +
+                "Location: Desert" + System.lineSeparator() +
+                "Position Type: Quality control" + System.lineSeparator() +
+                "Core Competency: Persistence" +
+                System.lineSeparator());
     }
 
     @Test

@@ -48,11 +48,11 @@ public class Job {
     @Override
     public String toString() {
         return String.format(System.lineSeparator() +
-                "ID: %d\n" +
-                "Name: %s\n" +
-                "Employer: %s\n" +
-                "Location: %s\n" +
-                "Position Type: %s\n" +
+                "ID: %d" + System.lineSeparator() +
+                "Name: %s" + System.lineSeparator() +
+                "Employer: %s" + System.lineSeparator() +
+                "Location: %s" + System.lineSeparator() +
+                "Position Type: %s" + System.lineSeparator() +
                 "Core Competency: %s" +
                 System.lineSeparator(),
                 this.getId(), this.getName(), this.getEmployer(), this.getLocation(), this.getPositionType(), this.getCoreCompetency()
@@ -79,7 +79,7 @@ public class Job {
     }
 
     public Employer getEmployer() {
-        if(employer.toString() == ""){
+        if(employer.toString().isEmpty()){
             employer.setValue("Data not available");
             return employer;
         } else {
@@ -93,7 +93,7 @@ public class Job {
     }
 
     public Location getLocation() {
-        if(location.toString() == ""){
+        if(location.toString().isEmpty()){
             location.setValue("Data not available");
             return location;
         } else {
@@ -106,7 +106,7 @@ public class Job {
     }
 
     public PositionType getPositionType() {
-        if(positionType.toString() == ""){
+        if(positionType.toString().isEmpty()){
             positionType.setValue("Data not available");
             return positionType;
         } else {
@@ -119,7 +119,7 @@ public class Job {
     }
 
     public CoreCompetency getCoreCompetency() {
-        if(coreCompetency.toString() == ""){
+        if(coreCompetency.toString().isEmpty()){
             coreCompetency.setValue("Data not available");
             return coreCompetency;
         } else {
