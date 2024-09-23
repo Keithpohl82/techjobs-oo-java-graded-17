@@ -2,7 +2,7 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class Employer {
+public class Employer extends JobField{
 
     private int id;
     private static int nextId = 1;
@@ -17,8 +17,6 @@ public class Employer {
         this();
         this.value = value;
     }
-
-    // Custom toString, equals, and hashCode methods:
 
     @Override
     public String toString() {
