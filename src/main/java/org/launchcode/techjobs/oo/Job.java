@@ -48,12 +48,12 @@ public class Job {
     @Override
     public String toString() {
         return String.format(System.lineSeparator() +
-                "ID: %d" + System.lineSeparator() +
-                "Name: %s" + System.lineSeparator() +
-                "Employer: %s" + System.lineSeparator() +
-                "Location: %s" + System.lineSeparator() +
-                "Position Type: %s" + System.lineSeparator() +
-                "Core Competency: %s" +
+                "ID: %d\n" +
+                "Name: %s\n" +
+                "Employer: %s\n" +
+                "Location: %s\n" +
+                "Position Type: %s\n" +
+                "Core Competency: %s\n" +
                 System.lineSeparator(),
                 this.getId(), this.getName(), this.getEmployer(), this.getLocation(), this.getPositionType(), this.getCoreCompetency()
         );

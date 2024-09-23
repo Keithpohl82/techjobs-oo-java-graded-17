@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Task 5 test fails due to differences in line separators.">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Task 5 test fails due to differences in line separators. Second commit refactor.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
@@ -278,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727124460124</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Task 5 test fails due to differences in line separators. Second commit refactor.">
+      <option name="closed" value="true" />
+      <created>1727127296219</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727127296219</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -287,7 +295,8 @@
     <MESSAGE value="Completed task 2, 3, and 4. All task 2, 3, and 4 tests pass. Waiting on IA to verify end of task 4." />
     <MESSAGE value="Start of task 5" />
     <MESSAGE value="Task 5 test fails due to differences in line separators." />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 5 test fails due to differences in line separators." />
+    <MESSAGE value="Task 5 test fails due to differences in line separators. Second commit refactor." />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 5 test fails due to differences in line separators. Second commit refactor." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/techjobs_oo_java17_graded$Tests_in__org_launchcode_techjobs_oo_.ic" NAME="Tests in 'org.launchcode.techjobs.oo' Coverage Results" MODIFIED="1727022679553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
