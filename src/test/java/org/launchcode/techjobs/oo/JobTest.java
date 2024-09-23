@@ -74,7 +74,7 @@ public class JobTest {
                 "Name: Product tester\n" +
                 "Employer: ACME\n" +
                 "Location: Desert\n" +
-                "Position Type: Quality control\n"
+                "Position Type: Quality control\n" +
                 "Core Competency: Persistence" +
                 System.lineSeparator());
     }
