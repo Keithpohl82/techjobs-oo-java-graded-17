@@ -55,7 +55,8 @@ public class Job {
                 "Position Type: %s\n" +
                 "Core Competency: %s" +
                 System.lineSeparator(),
-                this.getId(), this.getName(), this.getEmployer(), this.getLocation(), this.getPositionType(), this.getCoreCompetency());
+                this.getId(), this.getName(), this.getEmployer(), this.getLocation(), this.getPositionType(), this.getCoreCompetency()
+        );
     }
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
@@ -66,7 +67,11 @@ public class Job {
     }
 
     public String getName() {
-        return name;
+        if(name == null){
+            return "Data not available";
+        }else {
+            return name;
+        }
     }
 
     public void setName(String name) {
@@ -74,15 +79,26 @@ public class Job {
     }
 
     public Employer getEmployer() {
-        return employer;
+        if(employer.toString() == ""){
+            employer.setValue("Data not available");
+            return employer;
+        } else {
+            return employer;
+        }
     }
 
     public void setEmployer(Employer employer) {
+
         this.employer = employer;
     }
 
     public Location getLocation() {
-        return location;
+        if(location.toString() == ""){
+            location.setValue("Data not available");
+            return location;
+        } else {
+            return location;
+        }
     }
 
     public void setLocation(Location location) {
@@ -90,7 +106,12 @@ public class Job {
     }
 
     public PositionType getPositionType() {
-        return positionType;
+        if(positionType.toString() == ""){
+            positionType.setValue("Data not available");
+            return positionType;
+        } else {
+            return positionType;
+        }
     }
 
     public void setPositionType(PositionType positionType) {
@@ -98,7 +119,12 @@ public class Job {
     }
 
     public CoreCompetency getCoreCompetency() {
+        if(coreCompetency.toString() == ""){
+            coreCompetency.setValue("Data not available");
+            return coreCompetency;
+        } else {
         return coreCompetency;
+        }
     }
 
     public void setCoreCompetency(CoreCompetency coreCompetency) {
