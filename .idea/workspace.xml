@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="bug causing JobTest to fail test 6 every other time JobTest runs from all tests. JobTest passes 100% of the time if ran on its own.">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="commit to test JobTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/JobField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/JobField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +54,9 @@
     &quot;accountId&quot;: &quot;bbf04fc4-52e5-4751-849d-0496761f92a1&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -80,7 +85,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.Tests in 'org.launchcode.techjobs.oo'">
+  <component name="RunManager" selected="Gradle.JobTest.testToStringHandlesEmptyField">
     <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -95,6 +100,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.launchcode.techjobs.oo.JobTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="JobTest.testJobsForEquality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testJobsForEquality&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -153,30 +182,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JobTest.testToStringStartsAndEndsWithNewLine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringStartsAndEndsWithNewLine&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="Tests in 'org.launchcode.techjobs.oo'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -216,18 +221,18 @@
     <list>
       <item itemvalue="Gradle.JobTest" />
       <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
+      <item itemvalue="Gradle.JobTest.testJobsForEquality" />
       <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
-      <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
       <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
       <item itemvalue="JUnit.JobTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
-        <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
         <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
+        <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
+        <item itemvalue="Gradle.JobTest.testJobsForEquality" />
+        <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
         <item itemvalue="Gradle.JobTest" />
-        <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
       </list>
     </recent_temporary>
   </component>
@@ -336,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727214901546</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="commit to test JobTest">
+      <option name="closed" value="true" />
+      <created>1727217721468</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727217721468</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -352,18 +365,8 @@
     <MESSAGE value="Start of Task 6" />
     <MESSAGE value="Fixed bug causing jobtest to fail test 6 every other time JobTest ran" />
     <MESSAGE value="bug causing JobTest to fail test 6 every other time JobTest runs from all tests. JobTest passes 100% of the time if ran on its own." />
-    <option name="LAST_COMMIT_MESSAGE" value="bug causing JobTest to fail test 6 every other time JobTest runs from all tests. JobTest passes 100% of the time if ran on its own." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="commit to test JobTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit to test JobTest" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/techjobs_oo_java17_graded$Tests_in__org_launchcode_techjobs_oo_.ic" NAME="Tests in 'org.launchcode.techjobs.oo' Coverage Results" MODIFIED="1727022679553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

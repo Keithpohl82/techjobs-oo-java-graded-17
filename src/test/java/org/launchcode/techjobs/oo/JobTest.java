@@ -7,15 +7,20 @@ import org.junit.Test;
 
 public class JobTest {
 
-    @Test
-    public void emptyTest() {
-        assertEquals(true, true);
-    }
+
 
     @Test
     public void testSettingJobId(){
-        Job testJob1 = new Job();
-        Job testJob2 = new Job();
+        Job testJob1 = new Job("Product tester",
+                new Employer("ACME"),
+                new Location("Desert"),
+                new PositionType("Quality control"),
+                new CoreCompetency("Persistence"));
+        Job testJob2 = new Job("Product tester",
+                new Employer("ACME"),
+                new Location("Desert"),
+                new PositionType("Quality control"),
+                new CoreCompetency("Persistence"));
         assertNotEquals(testJob1.getId(), testJob2.getId());
     }
     @Test
@@ -39,18 +44,18 @@ public class JobTest {
     }
     @Test
     public void testJobsForEquality(){
-//        Job testJob4 = new Job("Product tester",
-//                new Employer("ACME"),
-//                new Location("Desert"),
-//                new PositionType("Quality control"),
-//                new CoreCompetency("Persistence"));
-//        Job testJob5 = new Job("Product tester",
-//                new Employer("ACME"),
-//                new Location("Desert"),
-//                new PositionType("Quality control"),
-//                new CoreCompetency("Persistence"));
-//
-//        assertEquals(testJob4, testJob5);
+        Job testJob4 = new Job("Product tester",
+                new Employer("ACME"),
+                new Location("Desert"),
+                new PositionType("Quality control"),
+                new CoreCompetency("Persistence"));
+        Job testJob5 = new Job("Product tester",
+                new Employer("ACME"),
+                new Location("Desert"),
+                new PositionType("Quality control"),
+                new CoreCompetency("Persistence"));
+
+        assertEquals(testJob4, testJob5);
    }
 
     @Test
@@ -66,6 +71,7 @@ public class JobTest {
 
     @Test
     public void testToStringContainsCorrectLabelsAndData(){
+
         Job testJob7 = new Job("Developer",
                 new Employer("Microsoft"),
                 new Location("St Louis"),
