@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Start of Task 6">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Fixed bug causing jobtest to fail test 6 every other time JobTest ran">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/JobField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/JobField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
@@ -78,7 +78,7 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.JobTest">
+  <component name="RunManager" selected="Gradle.Tests in 'org.launchcode.techjobs.oo'">
     <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -221,8 +221,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.JobTest" />
         <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
+        <item itemvalue="Gradle.JobTest" />
         <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
         <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
         <item itemvalue="Gradle.JobTest.testJobsForEquality" />
@@ -318,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727133461649</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixed bug causing jobtest to fail test 6 every other time JobTest ran">
+      <option name="closed" value="true" />
+      <created>1727213738782</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1727213738782</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -332,7 +340,8 @@
     <MESSAGE value="Forgot + on line 77" />
     <MESSAGE value="Fixed issue with JobTest by instanciating Job class with info." />
     <MESSAGE value="Start of Task 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start of Task 6" />
+    <MESSAGE value="Fixed bug causing jobtest to fail test 6 every other time JobTest ran" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug causing jobtest to fail test 6 every other time JobTest ran" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/techjobs_oo_java17_graded$Tests_in__org_launchcode_techjobs_oo_.ic" NAME="Tests in 'org.launchcode.techjobs.oo' Coverage Results" MODIFIED="1727022679553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
