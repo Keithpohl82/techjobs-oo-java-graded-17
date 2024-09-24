@@ -68,12 +68,12 @@ public class JobTest {
 
     @Test
     public void testToStringContainsCorrectLabelsAndData(){
-        Job testJob1 = new Job("Product tester",
+        Job testJob = new Job("Product tester",
                 new Employer("ACME"),
                 new Location("Desert"),
                 new PositionType("Quality control"),
                 new CoreCompetency("Persistence"));
-        assertEquals(testJob1.toString(), System.lineSeparator() +
+        assertEquals(testJob.toString(), System.lineSeparator() +
                 "ID: 1\n" +
                 "Name: Product tester\n" +
                 "Employer: ACME\n" +
