@@ -2,7 +2,7 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class PositionType{
+public class PositionType extends JobField{
 
     private int id;
     private static int nextId = 1;
@@ -24,15 +24,16 @@ public class PositionType{
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) {  // Two objects are equal if they have the same id.
         if (this == o) return true;
-        if (!(o instanceof PositionType that)) return false;
-        return id == that.id;
+        if (!(o instanceof PositionType)) return false;
+        PositionType position = (PositionType) o;
+        return getId() == position.getId();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(id);
+        return Objects.hashCode(getId());
     }
 
 
