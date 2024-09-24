@@ -6,7 +6,7 @@ public class Job {
 
     private int id;
     private static int nextId = 1;
-
+    private String newLine = System.lineSeparator();
     private String name;
     private Employer employer;
     private Location location;
@@ -42,14 +42,14 @@ public class Job {
 
     @Override
     public String toString() {
-        return String.format(System.lineSeparator() +
-                "ID: %d\n" +
-                "Name: %s\n" +
-                "Employer: %s\n" +
-                "Location: %s\n" +
-                "Position Type: %s\n" +
+        return String.format(newLine +
+                "ID: %d" + newLine +
+                "Name: %s" + newLine +
+                "Employer: %s" + newLine +
+                "Location: %s" + newLine +
+                "Position Type: %s" + newLine +
                 "Core Competency: %s" +
-                System.lineSeparator(),
+                newLine,
                 this.getId(), this.getName(), this.getEmployer(), this.getLocation(), this.getPositionType(), this.getCoreCompetency()
         );
     }

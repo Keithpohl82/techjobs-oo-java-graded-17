@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class JobTest {
 
-
+    private String newLine = System.lineSeparator();
 
     @Test
     public void testSettingJobId(){
@@ -65,8 +65,8 @@ public class JobTest {
                 new Location("Desert"),
                 new PositionType("Quality control"),
                 new CoreCompetency("Persistence"));
-        assertEquals(testJob6.toString().startsWith(System.lineSeparator()),testJob6.toString().startsWith(System.lineSeparator()));
-        assertEquals(testJob6.toString().endsWith(System.lineSeparator()),testJob6.toString().endsWith(System.lineSeparator()));
+        assertEquals(testJob6.toString().startsWith(newLine),testJob6.toString().startsWith(newLine));
+        assertEquals(testJob6.toString().endsWith(newLine),testJob6.toString().endsWith(newLine));
     }
 
     @Test
@@ -77,14 +77,14 @@ public class JobTest {
                 new Location("St Louis"),
                 new PositionType(""),
                 new CoreCompetency("Back end"));
-        assertEquals(testJob7.toString(), System.lineSeparator() +
-                "ID: 1\n" +
-                "Name: Developer\n" +
-                "Employer: Microsoft\n" +
-                "Location: St Louis\n" +
-                "Position Type: Data not available\n" +
+        assertEquals(testJob7.toString(), newLine +
+                "ID: 1" + newLine +
+                "Name: Developer" + newLine +
+                "Employer: Microsoft" + newLine +
+                "Location: St Louis" + newLine +
+                "Position Type: Data not available" + newLine +
                 "Core Competency: Back end" +
-                System.lineSeparator());
+                newLine);
     }
 
     @Test
@@ -94,14 +94,14 @@ public class JobTest {
                 new Location(""),
                 new PositionType("Quality control"),
                 new CoreCompetency(""));
-        assertEquals(testJob8.toString(), System.lineSeparator() +
-                "ID: 1\n" +
-                "Name: Product tester\n" +
-                "Employer: ACME\n" +
-                "Location: Data not available\n" +
-                "Position Type: Quality control\n" +
+        assertEquals(testJob8.toString(), newLine +
+                "ID: 1" + newLine +
+                "Name: Product tester" + newLine +
+                "Employer: ACME" + newLine +
+                "Location: Data not available" + newLine +
+                "Position Type: Quality control" + newLine +
                 "Core Competency: Data not available" +
-                System.lineSeparator());
+                newLine);
 
     }
 }
