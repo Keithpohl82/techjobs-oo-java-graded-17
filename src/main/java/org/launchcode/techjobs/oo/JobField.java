@@ -20,40 +20,40 @@ public class JobField {
 
     //////////////////////////////////////////////
 
-    private int id;
-    private static int nextId = 1;
-    private String value;
-
-    public JobField(){
-        id = nextId;
-        nextId++;
-    }
-    public JobField(String value) {
-        this();
-        this.value = value;
-    }
-
-    @Override
-    public String toString() {
-        return value;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(id);
-    }
-
-    // Getters and Setters:
-
-    public int getId() {
-        return id;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
+//    private int id;
+//    private static int nextId = 1;
+//    private String value;
+//
+//    public JobField(){
+//        id = nextId;
+//        nextId++;
+//    }
+//    public JobField(String value) {
+//        this();
+//        this.value = value;
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return value;
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hashCode(id);
+//    }
+//
+//    // Getters and Setters:
+//
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public String getValue() {
+//        return value;
+//    }
+//
+//    public void setValue(String value) {
+//        this.value = value;
+//    }
 }
