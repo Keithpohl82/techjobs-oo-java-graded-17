@@ -36,11 +36,11 @@ public class JobTest {
         assertTrue(testJob3.getLocation() instanceof Location);
         assertTrue(testJob3.getPositionType() instanceof PositionType);
         assertTrue(testJob3.getCoreCompetency() instanceof CoreCompetency);
-        assertEquals(testJob3.getName(), "Product tester");
-        assertEquals(testJob3.getEmployer().toString(), "ACME");
-        assertEquals(testJob3.getLocation().toString(), "Desert");
-        assertEquals(testJob3.getPositionType().toString(), "Quality control");
-        assertEquals(testJob3.getCoreCompetency().toString(), "Persistence");
+        assertEquals("Product tester",testJob3.getName());
+        assertEquals("ACME", testJob3.getEmployer().toString());
+        assertEquals("Desert", testJob3.getLocation().toString());
+        assertEquals("Quality control", testJob3.getPositionType().toString());
+        assertEquals("Persistence", testJob3.getCoreCompetency().toString());
     }
     @Test
     public void testJobsForEquality(){
@@ -77,14 +77,14 @@ public class JobTest {
                 new Location("St Louis"),
                 new PositionType(""),
                 new CoreCompetency("Back end"));
-        assertEquals(testJob7.toString(), newLine +
+        assertEquals( newLine +
                 "ID: 1" + newLine +
                 "Name: Developer" + newLine +
                 "Employer: Microsoft" + newLine +
                 "Location: St Louis" + newLine +
                 "Position Type: Data not available" + newLine +
                 "Core Competency: Back end" +
-                newLine);
+                newLine, testJob7.toString());
     }
 
     @Test
@@ -94,14 +94,14 @@ public class JobTest {
                 new Location(""),
                 new PositionType("Quality control"),
                 new CoreCompetency(""));
-        assertEquals(testJob8.toString(), newLine +
+        assertEquals( newLine +
                 "ID: 1" + newLine +
                 "Name: Product tester" + newLine +
                 "Employer: ACME" + newLine +
                 "Location: Data not available" + newLine +
                 "Position Type: Quality control" + newLine +
                 "Core Competency: Data not available" +
-                newLine);
+                newLine, testJob8.toString());
 
     }
 }
