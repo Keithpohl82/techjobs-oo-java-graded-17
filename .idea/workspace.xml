@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Had assertEquals backwards. Fixed all instances of assertEquals">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Finished all task and all test pass other than test 7 in JobTest. Waiting for help from IA to figure out bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Employer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/JobField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/JobField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,40 +63,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build techjobs-oo-java-graded-17.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JobTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JobTest.testJobConstructorSetsAllFields.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JobTest.testJobsForEquality.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JobTest.testToStringContainsCorrectLabelsAndData.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JobTest.testToStringHandlesEmptyField.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JobTest.testToStringStartsAndEndsWithNewLine.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'org.launchcode.techjobs.oo'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.techjobs-oo-java-graded-17 [:org.launchcode.techjobs.oo.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build techjobs-oo-java-graded-17.executor": "Run",
+    "Gradle.JobTest.executor": "Run",
+    "Gradle.JobTest.testJobConstructorSetsAllFields.executor": "Run",
+    "Gradle.JobTest.testJobsForEquality.executor": "Run",
+    "Gradle.JobTest.testToStringContainsCorrectLabelsAndData.executor": "Run",
+    "Gradle.JobTest.testToStringHandlesEmptyField.executor": "Run",
+    "Gradle.JobTest.testToStringStartsAndEndsWithNewLine.executor": "Run",
+    "Gradle.Tests in 'org.launchcode.techjobs.oo'.executor": "Run",
+    "Gradle.techjobs-oo-java-graded-17 [:org.launchcode.techjobs.oo.Main.main()].executor": "Run",
+    "JUnit.JobTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Gradle.Tests in 'org.launchcode.techjobs.oo'">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.Main" />
-      <module name="techjobs-oo-java17-graded.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.launchcode.techjobs.oo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -115,6 +102,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.launchcode.techjobs.oo.JobTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="JobTest.testJobsForEquality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testJobsForEquality&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -210,9 +221,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.JobTest" />
       <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
+      <item itemvalue="Gradle.JobTest.testJobsForEquality" />
       <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
       <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
       <item itemvalue="JUnit.JobTest" />
@@ -220,9 +231,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
-        <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
+        <item itemvalue="Gradle.JobTest.testJobsForEquality" />
         <item itemvalue="Gradle.JobTest" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
         <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
       </list>
     </recent_temporary>
@@ -372,7 +383,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727223760965</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Finished all task and all test pass other than test 7 in JobTest. Waiting for help from IA to figure out bug">
+      <option name="closed" value="true" />
+      <created>1727227492175</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1727227492175</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -393,9 +412,11 @@
     <MESSAGE value="Job test test 7 expects changes what is actually writen" />
     <MESSAGE value="Updated System.lineSeparator() to be a variable" />
     <MESSAGE value="Had assertEquals backwards. Fixed all instances of assertEquals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Had assertEquals backwards. Fixed all instances of assertEquals" />
+    <MESSAGE value="Finished all task and all test pass other than test 7 in JobTest. Waiting for help from IA to figure out bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished all task and all test pass other than test 7 in JobTest. Waiting for help from IA to figure out bug" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/techjobs_oo_java17_graded$JobTest.ic" NAME="JobTest Coverage Results" MODIFIED="1727282340271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/techjobs_oo_java17_graded$Tests_in__org_launchcode_techjobs_oo_.ic" NAME="Tests in 'org.launchcode.techjobs.oo' Coverage Results" MODIFIED="1727022679553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/techjobs_oo_java17_graded$JobTest_testToStringContainsCorrectLabelsAndData.ic" NAME="JobTest.testToStringContainsCorrectLabelsAndData Coverage Results" MODIFIED="1727217102451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
