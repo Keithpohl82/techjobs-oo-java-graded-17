@@ -71,7 +71,6 @@ public class JobTest {
 
     @Test
     public void testToStringContainsCorrectLabelsAndData(){
-
         Job testJob7 = new Job("Developer",
                 new Employer("Microsoft"),
                 new Location("St Louis"),
@@ -102,6 +101,5 @@ public class JobTest {
                 "Position Type: Quality control" + newLine +
                 "Core Competency: Data not available" +
                 newLine, testJob8.toString());
-
     }
 }
