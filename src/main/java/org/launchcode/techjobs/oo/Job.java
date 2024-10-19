@@ -81,7 +81,6 @@ public class Job {
     }
 
     public void setEmployer(Employer employer) {
-
         this.employer = employer;
     }
 

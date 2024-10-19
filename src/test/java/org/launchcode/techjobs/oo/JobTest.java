@@ -19,7 +19,7 @@ public class JobTest {
                 new PositionType("Quality control"),
                 new CoreCompetency(""));
         assertEquals( newLine +
-                "ID: " + testJob.getId()  + newLine +
+                "ID: "  + testJob.getId() + newLine +
                 "Name: Product tester" + newLine +
                 "Employer: ACME" + newLine +
                 "Location: Data not available" + newLine +
